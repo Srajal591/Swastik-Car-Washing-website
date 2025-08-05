@@ -1,4 +1,7 @@
-    "use client"
+
+"use client"
+
+import bgImage from '../assets/backgroundImage.jpg' // correct relative import
 
 const Hero = () => {
   const handleBookNow = () => {
@@ -6,8 +9,18 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="bg-[#5E686D] text-[#FAFFC5] min-h-screen flex items-center pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section
+      id="home"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+      className="text-[#FAFFC5] min-h-screen flex items-center pt-16 relative"
+    >
+      <div className="absolute inset-0 bg-black/40 z-0"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Swastik Car Washing
