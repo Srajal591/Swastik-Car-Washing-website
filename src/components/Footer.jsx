@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Swastik Car Washing & Detailing</h3>
+            <h3 className="text-2xl font-bold mb-4">Max Car Washing & Detailing</h3>
             <p className="text-[#A9BFA8] mb-4">
               Your trusted partner for premium car care services in Narmadapuram. We make your vehicle shine like new
               with professional washing and detailing.
@@ -102,7 +102,7 @@ const Footer = () => {
 
         <div className="border-t border-[#5E686D] mt-8 pt-8 text-center">
           <p className="text-[#A9BFA8]">
-            © {new Date().getFullYear()} Swastik Car Washing & Detailing. All rights reserved.
+            © {new Date().getFullYear()} Max Car Washing & Detailing. All rights reserved.
           </p>
         </div>
       </div>
